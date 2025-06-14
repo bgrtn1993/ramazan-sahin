@@ -5,7 +5,7 @@ import App from './App.jsx'; // Ana App bileşenini import et
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Router basename="/ramazan-sahin/">
+        <Router>
             <App />
         </Router>
     </React.StrictMode>,
