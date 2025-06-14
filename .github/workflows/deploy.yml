@@ -30,4 +30,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages # Dağıtımın yapılacağı branch
-          folder: build # Dağıtılacak klasör (React projelerinde genellikle 'build' klasörüdür)
+          folder: dist # Dağıtılacak klasör (React projelerinde genellikle 'build' klasörüdür)
