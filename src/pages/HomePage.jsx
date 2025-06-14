@@ -20,7 +20,7 @@ const HomePage = ({ pageVariants }) => {
             {/* Hero Section */}
             <section
                 className="relative h-[60vh] md:h-[70vh] bg-cover bg-center flex items-center justify-center text-white p-4"
-                style={{ backgroundImage: "url('/src/assets/hukuk-burosu-arka-plan.jpg')" }} // Resim yolu güncellendi
+                style={{ backgroundImage: "url('hukuk-burosu-arka-plan.jpg')" }} // Resim yolu güncellendi
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative text-center max-w-4xl mx-auto z-10">
@@ -69,7 +69,7 @@ const HomePage = ({ pageVariants }) => {
                         transition={{ duration: 0.8 }}
                     >
                         <img
-                            src="src/assets/sahin-buro.png"
+                            src="sahin-buro.png"
                             alt="Hukuk Ofisi"
                             className="rounded-lg shadow-xl w-full h-auto object-cover"
                         />
