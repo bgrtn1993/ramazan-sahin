@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, X, Facebook, ChevronRight } from 'lucide-react';
+import {Mail, Phone, MapPin, Linkedin, X, Facebook, ChevronRight, Instagram} from 'lucide-react';
 
 const Footer = () => {
     const navigate = useNavigate(); // Programatik navigasyon için
@@ -14,15 +14,19 @@ const Footer = () => {
                         Müvekkillerimize hukukun her alanında güvenilir ve etkin çözümler sunan, adaleti rehber edinen köklü bir hukuk bürosuyuz.
                     </p>
                     <div className="flex space-x-4">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                            <Linkedin className="w-6 h-6" />
+                        <a href="https://www.instagram.com/av.ramazansahinn" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                            <Instagram className="w-6 h-6" />
                         </a>
-                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                        {/*<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-white transition-colors">
+                            <Linkedin className="w-6 h-6"/>
+                        </a>
+                            <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                             <X className="w-6 h-6" />
-                        </a>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                            </a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                             <Facebook className="w-6 h-6" />
-                        </a>
+                            </a>*/}
                     </div>
                 </div>
 
@@ -43,15 +47,23 @@ const Footer = () => {
                     <ul className="space-y-2">
                         <li className="flex items-start">
                             <MapPin className="w-5 h-5 mr-3 mt-1 text-gray-400 flex-shrink-0" />
-                            <span>Örnek Mah. Hukuk Cad. No: 123, Kat: 5 Daire: 10, İstanbul/Türkiye</span>
+                            <a
+                                href="https://www.google.com/maps?ll=40.195448,29.063176&z=19&t=m&hl=tr&gl=TR&mapclient=embed&cid=13759398979621655973"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-white transition-colors"
+                            >
+                                Selamet Mah. Vardar Cd. No:5 Ecevit Sinem 2 İş Hanı K:2 D:24, <br /> Osmangazi, Bursa/Türkiye
+                            </a>
                         </li>
                         <li className="flex items-center">
                             <Phone className="w-5 h-5 mr-3 text-gray-400" />
-                            <span>+90 (212) 555 1234</span>
+                            <span>+90 541 383 62 44</span>
                         </li>
                         <li className="flex items-center">
                             <Mail className="w-5 h-5 mr-3 text-gray-400" />
-                            <span>info@hukukburosu.com.tr</span>
+                            <a href="mailto:av.ramazansahinn@gmail.com" className="hover:text-white transition-colors">av.ramazansahinn@gmail.com</a>
+
                         </li>
                     </ul>
                 </div>
