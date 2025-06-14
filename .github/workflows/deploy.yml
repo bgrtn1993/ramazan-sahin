@@ -1,33 +1,26 @@
-# İş akışının adı
 name: Build and Deploy to GitHub Pages
 
-# Bu iş akışı ne zaman çalışacak?
 on:
-  # Sadece "main" (veya "master") branch'ine push yapıldığında
   push:
     branches: [ main ]
 
-# İşler (Jobs)
 jobs:
   build-and-deploy:
-    # İşin çalışacağı ortam
+    # BU SATIRLARI EKLEYİN
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
-
-    # Adımlar
     steps:
-      # 1. Kodları depodan çekme
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # 2. Node.js ortamını kurma ve bağımlılıkları yükleme
       - name: Install and Build 🔧
         run: |
           npm install
           npm run build
 
-      # 3. Build edilen dosyaları "gh-pages" branch'ine gönderme
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages # Dağıtımın yapılacağı branch
-          folder: dist # Dağıtılacak klasör (React projelerinde genellikle 'build' klasörüdür)
+          branch: gh-pages
+          folder: dist # veya 'build'
