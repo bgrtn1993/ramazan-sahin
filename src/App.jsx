@@ -50,6 +50,7 @@ const App = () => {
 
             {/* Sayfa geçişleri için AnimatePresence */}
             <AnimatePresence mode='wait'>
+
                 <Routes location={location} key={location.pathname}>
                     <Route path="/" element={<HomePage pageVariants={pageVariants} />} />
                     <Route path="/hakkimizda" element={<AboutPage pageVariants={pageVariants} />} />
